@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { Pet } from "../../models/Pet";
 
-const PetCard = (props: { petInfo: Pet }) => {
+const PetCard = (props: { petInfo: Pet; onClick: any }) => {
   const { name, age, breed, size, castrated, vacinated } = props.petInfo;
 
   return (
@@ -34,7 +34,9 @@ const PetCard = (props: { petInfo: Pet }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">View</Button>
+          <Button size="small" onClick={props.onClick}>
+            View
+          </Button>
           <Button size="small">Save</Button>
         </CardActions>
       </Card>
