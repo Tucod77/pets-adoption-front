@@ -12,7 +12,7 @@ const App = () => {
     <PetContext>
       <Router>
         <NavBar />
-        <CardHeader>Adocao</CardHeader>
+        <CardHeader />
         <div>
           <Routes>
             <Route path="/" element={<Home />}></Route>

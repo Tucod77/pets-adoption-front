@@ -3,16 +3,19 @@ import React, { useContext, useState } from "react";
 import { PetContext } from "../../contexts/PetContext";
 import { PetContextType } from "../../contexts/PetContextType";
 import PetCard from "../PetCard/PetCard";
-import SideBar from "../SideBar/SideBar";
 
 const PetCardTable = () => {
   const { pets } = useContext<PetContextType>(PetContext);
   const [test, setTest] = useState<number>(0);
+  const styles = {
+    body: {
+      marginLeft: 0
+    }
+  }
 
   return (
     <>
-      <Container maxWidth="xl">
-        <SideBar></SideBar>
+      <Container maxWidth="xl"style={styles.body}>
         <p>Numero de click nos views de cards {test}</p>
         <Grid container spacing={2}>
           {pets.map((pet) => (
