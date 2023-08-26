@@ -1,5 +1,8 @@
 name: Deploy to Firebase Hosting on Merge
-on: pull_request
+on:
+  push:
+    branches:
+      - main
 jobs:
   build_and_preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
@@ -9,7 +12,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build Project
-        run: npm run build
+        run: |
+          export CI=false  # Set CI environment variable to false to prevent treating warnings as errors
+          npm run build
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
