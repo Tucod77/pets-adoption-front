@@ -46,9 +46,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## comandos pro firebase
-npm install -g firebase-tools
-C:\Users\user\AppData\Roaming\npm\firebase init
-C:\Users\user\AppData\Roaming\npm\firebase login
-C:\Users\user\AppData\Roaming\npm\firebase init hosting
-C:\Users\user\AppData\Roaming\npm\firebase deploy
+npm install -g firebase-tools \
+C:\Users\user\AppData\Roaming\npm\firebase init \
+C:\Users\user\AppData\Roaming\npm\firebase login \
+C:\Users\user\AppData\Roaming\npm\firebase init hosting \
+C:\Users\user\AppData\Roaming\npm\firebase deploy \
 npm i
