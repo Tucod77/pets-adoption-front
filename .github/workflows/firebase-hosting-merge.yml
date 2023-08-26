@@ -13,7 +13,7 @@ jobs:
         run: npm install
       - name: Build Project
         run: |
-          export CI=false  # Set CI environment variable to false to prevent treating warnings as errors
+          export CI=false
           npm run build
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
