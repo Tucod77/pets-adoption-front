@@ -1,0 +1,9 @@
+.petsDisplay {
+    position: relative;
+    left: 350px;
+}
+
+.sideBar {
+    position: fixed;
+    left: 25px;
+}
